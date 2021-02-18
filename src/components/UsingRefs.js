@@ -61,6 +61,7 @@ class UsingRefs extends React.Component {
     const { contacts } = this.state;
     return (
       <div>
+        <h4>{this.props.type}</h4>
         <h2>Add Someone</h2>
         <form onSubmit={this.handleSubmit}>
           <input type="text" ref="name" placeholder="name" />
