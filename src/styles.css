@@ -1,0 +1,27 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.inc-button {
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+* {
+  box-sizing: border-box;
+}
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  margin-bottom: 20px;
+}
+input[type="submit"] {
+  background-color: rgb(69, 27, 117);
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+form {
+  padding: 10px;
+}
