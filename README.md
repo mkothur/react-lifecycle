@@ -10,3 +10,9 @@ Every component in React goes through a lifecycle of events. I like to think of 
 - Mounting – Birth of your component
 - Update – Growth of your component
 - Unmount – Death of your component
+
+As everything goes through a cycle of taking birth, growing, and death the same goes with React. Each component in React has a lifecycle that goes through three main phases Mounting, Updating, and Unmounting.
+
+The react lifecycle method is used in the React class component. It helps us in creating our state and mutating them.
+
+![Optional Text](../assets/lifecycle-methods.jpg)
