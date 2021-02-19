@@ -2,11 +2,11 @@ import React from 'react'
 
 class Child extends React.Component{
     componentWillUnmount(){
-        alert('componentWillUnmount mothod is invoked')
-        alert('This will unmount')
+        // alert('componentWillUnmount mothod is invoked')
+        // alert('This will unmount')
     }
     render(){
-        alert('render call')
+        // alert('render call')
         return(
             <>
             <h3>8. I am a child component</h3>
