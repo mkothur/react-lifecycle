@@ -15,4 +15,4 @@ As everything goes through a cycle of taking birth, growing, and death the same 
 
 The react lifecycle method is used in the React class component. It helps us in creating our state and mutating them.
 
-![Optional Text](../assets/lifecycle-methods.jpg)
+![Optional Text](./assets/lifecycle-methods.jpg)
