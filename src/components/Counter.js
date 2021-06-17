@@ -29,7 +29,7 @@ class Counter extends React.Component {
   render() {
     return (
       <div>
-        <Cunstructor />
+        <Cunstructor /> <br/> <br/>
         <h4>{this.props.type}</h4>
         counter value : {this.state.counter} <br /> <br />
         <button

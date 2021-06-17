@@ -15,13 +15,73 @@ input {
   margin-top: 6px;
   margin-bottom: 20px;
 }
-input[type="submit"] {
+input[type='submit'] {
   background-color: rgb(69, 27, 117);
   color: white;
   font-weight: bold;
   font-size: 20px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 form {
   padding: 10px;
+}
+
+.flex-container {
+  /* We first create a flex layout context */
+  display: flex;
+
+  /* Then we define the flow direction 
+     and if we allow the items to wrap 
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+  flex-flow: row wrap;
+
+  /* Then we define how is distributed the remaining space */
+  justify-content: space-around;
+
+  /* padding: 0;
+  margin: 0; */
+  list-style: none;
+}
+
+.flex-item {
+  background: tomato;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+
+.left {
+  padding: 1em;
+  /* background-color: #337ab7; */
+}
+
+.right {
+  padding: 1em;
+  /* background-color: #5cb85c; */
+}
+
+.parent {
+  display: flex;
+  overflow: hidden;
+  margin: 1em 0;
+  color: #000;
+  /* border: 1px solid #333; */
+  align-items: center;
+}
+
+.margin-right-auto {
+  margin-right: auto;
+}
+
+.fill-remaining-space {
+  flex: auto;
 }

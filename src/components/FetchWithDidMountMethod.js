@@ -10,10 +10,10 @@ class FetchWithDidMountMethod extends React.Component {
         }
     }
     componentDidMount() {
-        // fetch('https://jsonplaceholder.typicode.com/users').then(res => res.json()).then(data => this.setState({users: data}))
-        axios.get('https://jsonplaceholder.typicode.com/users').then(response => {
-            this.setState({users: response.data, loading: true})
-        })
+        fetch('https://jsonplaceholder.typicode.com/users').then(res => res.json()).then(data => this.setState({users: data}))
+        // axios.get('https://jsonplaceholder.typicode.com/users').then(response => {
+        //     this.setState({users: response.data, loading: true})
+        // })
 
     }
     render() {
@@ -23,6 +23,7 @@ class FetchWithDidMountMethod extends React.Component {
                 <h3>6. Make Fetch API call in componentDidMount lifecycle method</h3>
                 <p>This will print all the name available in API users data</p>
                 {loading ? users.map(user=> <h6 key={user.id}>{user.name}</h6>) : '....'}
+              
                 
             </div>
         )

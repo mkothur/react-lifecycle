@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>string frequency</title>
+<style type="text/css">
+#text{
+    width:250px;
+}
+</style>
+</head>
+
+<body >
+
+<textarea id="txt" cols="25" rows="3" placeholder="add your text here">   </textarea></br>
+<button type="button" onclick="search()">search</button>
+
+    <script >
+
+        function search()
+        {
+            var data=document.getElementById('txt').value;
+            var temp=data;
+            var words=new Array();
+            words=temp.split(" ");
+
+            var unique = {};
+
+
+            for (var i = 0; i < words.length; i++) {
+                var word = words[i];
+                console.log(word);
+
+                if (word in unique)
+                {
+                    console.log("word found");
+                    var count  = unique[word];
+                    count ++;
+                    unique[word]=count;
+                }
+                else
+                {
+                    console.log("word NOT found");
+                    unique[word]=1;
+                }
+            }
+            console.log(unique);
+        }
+       function test(str)  {
+            let temp = str;
+            let words = temp.split(" ");
+            let unique = {}
+
+            for (let i = 0; i < words.length; i++) {
+                let word = words[i];
+
+                if ( word in unique) {
+                    console.log(unique[word])
+                    let count = unique[word];
+                    count++;
+                    unique[word] = count;
+                } 
+                else {
+                    unique[word] = 1;
+                }
+            }
+            return unique;
+        }
+        console.log('identify and each unique word and show how many time each word as occurred', test("aabacbac"));
+
+        function TwoSum(arr, traget) {
+
+            for(let i =0; i< arr.length; i++) {
+                for (let j = 0 + 1; j < arr.length; j++) {
+                    if (arr[i] + arr[j] == traget) {
+                        return [i, j]
+                        // return [arr[i], arr[j]]
+                    }
+                }
+            }
+        }
+
+        console.log('Find two numbers in the array that sum up to 11(target Integer).',TwoSum([1,2,3,5,6,7], 11))
+
+
+
+        var initialData = [{ID: 1, name: 'Sally'}];
+        var newData = [{ID: 1, salary: 100}];
+        var ids = new Set(initialData.map(d => d.ID));
+        var merged = [...initialData, ...newData.filter(d => !ids.has(d.ID))];
+        console.log(merged);
+
+    </script>
+
+</body>
+</html>
