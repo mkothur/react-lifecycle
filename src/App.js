@@ -29,9 +29,18 @@ import Demo from './components/Demo';
 import Calculator from './components/Calculator';
 import Unstable from './components/Unstable';
 import IsAsync from './components/IsAsync';
-import GenerateList from './components/GenerateList'
-import Try from './components/Try'
-import StateUse from './components/StateUse'
+import GenerateList from './components/GenerateList';
+import Try from './components/Try';
+import StateUse from './components/StateUse';
+import StopWatch from './components/StopWatch';
+import LoadPosts from './components/LoadPosts';
+import ShowFilterData from './components/ShowFilterData';
+import UsersData from './components/UsersData';
+import SubmitForm from './components/SubmitForm';
+import InputWithSearch from './components/InputWithSearch';
+import MultiSelect from './components/MultiSelect';
+import Pagination from './components/Pagination'
+import Parent from './components/Parent';
 
 class App extends React.Component {
   // state = {
@@ -59,8 +68,17 @@ class App extends React.Component {
   render() {
     return (
       <div className='App'>
-          <Try />
-        {/* <GenerateList /> */}
+          <Parent />
+          <Try /> <br/>
+          <StopWatch /><br/>
+          <LoadPosts /><br/>
+          <ShowFilterData /> <br/>
+          <UsersData />
+          <SubmitForm />
+          <InputWithSearch />
+          <MultiSelect />
+          <Pagination />
+        <GenerateList />
         {/* <Unstable value={this.state.value} /> */}
         {/* <IsAsync /> */}
         {/* <Try/> */}

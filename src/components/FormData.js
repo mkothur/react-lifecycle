@@ -21,16 +21,15 @@ class FormData extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    const email = this.state.email;
-    const password = this.state.password;
     //const gender = this.state.selectValue;
     //console.log(gender);
     let newData = [
+      ...this.state.usersList,
       {
-        ...this.state.usersList,
-        [this.state.email]: this.state.password,
-        [this.state.gender]: this.state.selectValue
-      }
+        email: this.state.email, 
+        password: this.state.password,
+        gender: this.state.selectValue,
+      },
     ];
     this.setState({
       usersList: newData
